@@ -100,6 +100,7 @@ ingress:
 # Frontend load balancer for non-HTTP(s) services
 front:
   # logLevel: WARNING
+  hostNetwork: false
   image:
     repository: mailu/nginx
     # tag defaults to mailuVersion

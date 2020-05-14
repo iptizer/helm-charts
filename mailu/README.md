@@ -42,6 +42,7 @@
 | `persistence.existingClaim`       | existing PVC                         | not set                                   |
 | `persistence.claimNameOverride`   | override the generated claim name    | not set                                   |
 | `webdav.enabled`                  | enable webdav server                 | `false`                                   |
+| `front.hostNetwork`               | set hostNetwork for front Nginx. Some network solutions require this to be set. | `false` |
 | `ingress.externalIngress`         | Use externally provided nginx        | `true`                                    |
 | `ingress.tlsFlavor`               | [Choose from these](https://mailu.io/1.7/compose/setup.html#tls-certificates)  | `cert`                                   |
 | `ingress.annotations`               | Annotations for the ingress resource, if enabled. Useful e.g. for configuring the NGINX controller configuration.  | `nginx.ingress.kubernetes.io/proxy-body-size: "0"`                                   |
